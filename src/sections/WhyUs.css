@@ -1,0 +1,82 @@
+.why-us {
+    padding: 8rem 0;
+    background: radial-gradient(circle at left, rgba(0, 240, 255, 0.03), transparent 30%);
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.align-left {
+    margin-left: 0;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.stats-row {
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.reason-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    transition: background 0.3s;
+}
+
+.reason-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.reason-icon {
+    font-size: 1.8rem;
+    color: var(--color-secondary);
+}
+
+.reason-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.reason-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 968px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}

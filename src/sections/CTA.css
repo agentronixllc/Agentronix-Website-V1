@@ -1,0 +1,45 @@
+.cta-section {
+    padding: 8rem 0;
+}
+
+.cta-box {
+    text-align: center;
+    padding: 5rem 2rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(3, 7, 18, 0.9) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.cta-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-desc {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+.large {
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .cta-title {
+        font-size: 2rem;
+    }
+}
