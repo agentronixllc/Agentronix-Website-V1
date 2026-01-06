@@ -5,12 +5,13 @@
     width: 100%;
     z-index: 1000;
     height: 70px;
+    padding-top: 20px;
     transition: all 0.3s ease;
     background: transparent;
 }
 
 .navbar.scrolled {
-    padding: 1rem 0;
+    padding: 20px 0 1rem 0;
     background: rgba(3, 7, 18, 0.8);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-light);
