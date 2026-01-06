@@ -37,11 +37,11 @@ const WhyUs = () => {
                         </p>
                         <div className="stats-row">
                             <div className="stat">
-                                <span className="stat-number">50+</span>
+                                <span className="stat-number">2+</span>
                                 <span className="stat-label">Enterprise Projects</span>
                             </div>
                             <div className="stat">
-                                <span className="stat-number">10M+</span>
+                                <span className="stat-number">100+</span>
                                 <span className="stat-label">Events Processed</span>
                             </div>
                         </div>

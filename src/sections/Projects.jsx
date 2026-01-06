@@ -1,28 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import Button from '../components/Button';
 import './Projects.css';
 
 const Projects = () => {
     const projects = [
         {
-            title: "FinTech Data Pipeline",
-            category: "Data Engineering",
-            tags: ["Python", "AWS", "Kafka"],
-            desc: "Real-time transaction processing system handling millions of events daily with < 50ms latency."
+            title: "Texas All Grass-Fed LLC",
+            image: "/projects/texasallgrassfed.png",
+            url: "https://texasallgrassfedllc.com"
         },
         {
-            title: "HealthCare AI Assistant",
-            category: "AI & NLP",
-            tags: ["OpenAI", "React", "Node.js"],
-            desc: "SaaS platform for clinics to automate patient intake and triage using advanced LLMs."
-        },
-        {
-            title: "Logistics Dashboard",
-            category: "Web App",
-            tags: ["Next.js", "Supabase", "Mapbox"],
-            desc: "Fleet management interface with live tracking, route optimization, and driver analytics."
+            title: "Retail Relay",
+            image: "/projects/retailrelay.png",
+            url: "https://www.retailrelay.io/"
         }
     ];
 
@@ -38,31 +29,38 @@ const Projects = () => {
 
                 <div className="projects-grid">
                     {projects.map((project, index) => (
-                        <motion.div
+                        <motion.a
+                            href={project.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="project-card glass"
                             key={index}
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
                         >
-                            <div className="project-header">
-                                <span className="project-category">{project.category}</span>
-                                <FaExternalLinkAlt className="external-icon" />
+                            <div className={`project-image-wrapper ${!project.image ? 'placeholder' : ''}`}>
+                                {project.image ? (
+                                    <>
+                                        <img
+                                            src={project.image}
+                                            alt={project.title}
+                                            className="project-image"
+                                        />
+                                        <div className="project-overlay">
+                                            <FaExternalLinkAlt className="overlay-icon" />
+                                        </div>
+                                    </>
+                                ) : (
+                                    <span className="placeholder-text">Coming Soon</span>
+                                )}
                             </div>
-                            <h3 className="project-title">{project.title}</h3>
-                            <p className="project-desc">{project.desc}</p>
-                            <div className="project-tags">
-                                {project.tags.map(tag => (
-                                    <span key={tag} className="tag">{tag}</span>
-                                ))}
+                            <div className="project-content">
+                                <h3 className="project-title">{project.title}</h3>
                             </div>
-                        </motion.div>
+                        </motion.a>
                     ))}
-                </div>
-
-                <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-                    <Button variant="secondary">View All Case Studies</Button>
                 </div>
             </div>
         </section>

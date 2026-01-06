@@ -7,6 +7,7 @@ import Projects from './sections/Projects';
 import WhyUs from './sections/WhyUs';
 import Process from './sections/Process';
 import TechStack from './sections/TechStack';
+import Contact from './sections/Contact';
 import CTA from './sections/CTA';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 <TechStack />
                 <Projects />
                 <Process />
+                <Contact />
                 <CTA />
             </main>
             <Footer />

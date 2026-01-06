@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Button from '../components/Button';
 import './Hero.css';
 
 const Hero = () => {
@@ -37,8 +36,8 @@ const Hero = () => {
                     </p>
 
                     <div className="hero-actions">
-                        <Button variant="primary" className="hero-btn">Start a Project</Button>
-                        <Button variant="secondary" className="hero-btn">View Our Work</Button>
+                        <a href="#contact" className="btn btn-primary hero-btn">Start a Project</a>
+                        <a href="#projects" className="btn btn-secondary hero-btn">View Our Work</a>
                     </div>
                 </motion.div>
 

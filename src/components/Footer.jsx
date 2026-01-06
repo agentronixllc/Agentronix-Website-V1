@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -7,7 +6,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="container footer-container">
                 <div className="footer-col">
-                    <h3 className="footer-logo">Agentronix<span className="dot">.</span></h3>
+                    <img src="/Agentornix-logo.png" alt="Agentronix" className="footer-logo-img" />
                     <p className="footer-desc">
                         Building intelligent software and autonomous systems for the future of business.
                     </p>
@@ -21,13 +20,8 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-col">
-                    <h4>Connect</h4>
-                    <div className="social-links">
-                        <a href="#"><FaGithub /></a>
-                        <a href="#"><FaLinkedin /></a>
-                        <a href="#"><FaTwitter /></a>
-                    </div>
-                    <p className="contact-email">hello@agentronix.com</p>
+                    <h4>Contact</h4>
+                    <p className="contact-email">agentronix@gmail.com</p>
                 </div>
             </div>
             <div className="footer-bottom container">

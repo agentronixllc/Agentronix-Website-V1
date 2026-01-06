@@ -12,13 +12,10 @@
     margin-bottom: 3rem;
 }
 
-.footer-logo {
-    font-size: 1.5rem;
+.footer-logo-img {
+    height: 200px;
+    width: auto;
     margin-bottom: 1rem;
-}
-
-.footer-logo .dot {
-    color: var(--color-primary);
 }
 
 .footer-desc {

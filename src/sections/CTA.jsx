@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../components/Button';
 import './CTA.css';
 
 const CTA = () => {
@@ -11,7 +10,7 @@ const CTA = () => {
                     <p className="cta-desc">
                         Let's discuss how Agentronix can accelerate your roadmap with AI-driven efficiency.
                     </p>
-                    <Button variant="glow" className="cta-btn large">Contact Agentronix</Button>
+                    <a href="#contact" className="btn btn-glow cta-btn large">Contact Agentronix</a>
                 </div>
             </div>
         </section>

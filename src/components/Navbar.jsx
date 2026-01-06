@@ -27,7 +27,7 @@ const Navbar = () => {
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="container nav-container">
                 <a href="#" className="logo">
-                    Agentronix<span className="dot">.</span>
+                    <img src="/Agentornix-logo.png" alt="Agentronix" className="logo-img" />
                 </a>
 
                 {/* Desktop Menu */}
