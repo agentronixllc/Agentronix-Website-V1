@@ -1,7 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import NexusOrb from '@/components/ui/nexus-orb';
 import './Hero.css';
 
+// ============================================
+// Main Hero Component
+// ============================================
 const Hero = () => {
     return (
         <section className="hero">
@@ -47,14 +51,7 @@ const Hero = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.4, duration: 0.8 }}
                 >
-                    {/* Abstract representation of AI nodes/network */}
-                    <div className="ai-network">
-                        <div className="circle c1"></div>
-                        <div className="circle c2"></div>
-                        <div className="circle c3"></div>
-                        <div className="line l1"></div>
-                        <div className="line l2"></div>
-                    </div>
+                    <NexusOrb />
                 </motion.div>
             </div>
         </section>
