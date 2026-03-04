@@ -14,6 +14,11 @@ const Projects = () => {
             title: "Retail Relay",
             image: "/projects/retailrelay.png",
             url: "https://www.retailrelay.io/"
+        },
+        {
+            title: "Mark's Flooring Zone",
+            image: "/projects/marksflooringzone.png",
+            url: "https://marksflooringzone.com/"
         }
     ];
 
